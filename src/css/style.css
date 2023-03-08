@@ -1,0 +1,199 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    /* 盒子的公共宽度 */
+    --pub-width: 100%;
+    /* 盒子的总高度 */
+    --total-height: 100%;
+    /* 中间主体部分高度 */
+    --main-height: 70%;
+    --grade: 4;
+    /* 背景主题颜色 */
+    --main-color:#a1e6ff;
+    /* 字体主题颜色 */
+    --font-color:#3498db;
+    --ul-height:60px;
+    --nav-wid:calc(var(--pub-width) / 3.5);
+}
+body{
+    background-color: var(--main-color);
+}
+.container {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color:var(--main-color);
+    /* overflow-x: hidden; */
+}
+
+
+.head {
+    width: var(--pub-width);
+    /* height: calc((var(--total-height) - var(--main-height)) / var(--grade)); */
+    height: auto;
+    background-color: var(--main-color);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--main-color);
+}
+.navBox{
+    width: var(--pub-width);
+    height: var(--ul-height);
+    min-height: 60px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    margin-bottom: 18vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(13px);
+}
+.navBox ul {
+    position: absolute;
+    right: 5%;
+    top: 0%;
+    width:var(--nav-wid);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 17px;
+}
+.navBox ul li:hover{
+    color: var(--font-color);
+    cursor: pointer;
+}
+.navBox a{
+    color: black;
+    text-decoration: none;
+}
+.navBox ul li:nth-child(1) a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+.navBox ul li:nth-child(3) a{
+    text-decoration: none;
+    color: black;
+}
+.navBox ul li a:hover{
+    color: var(--font-color);
+}
+.navBox ul li:hover .menu{
+    display: block;
+}
+.logo{
+    --logo-size:45px;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    border-radius: 50%;
+    position: absolute;
+    top: calc((100% - var(--logo-size)) / 2);
+    left: 70px;
+    border: 2px solid #3498db;
+}
+.menu{
+    position: absolute;
+    right:calc((5% + calc(var(--nav-wid) / 2.6)));
+    top: 55px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    width: 120px;
+    height: 100px;
+    background-color:#ffffff;
+    display: none;
+}
+.menu li{
+    list-style: none;
+    margin-top: 15px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+.menu li a:hover{
+    color: var(--font-color);
+}
+.navBox p{
+    width: 200px;
+    letter-spacing: 2px;
+    position:relative;
+    top: calc(var(--ul-height) / 4);
+    left: 135px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}   
+
+.main {
+    position: absolute;
+    left: 0;
+    top:calc( var(--ul-height) + 10px);
+    width: var(--pub-width);
+    height: var(--main-height);
+    background-color: var(--main-color);
+}
+.title{
+    position: relative;
+    top: 20px;
+    width: 45.5%;
+    left: 25%;
+    font: 100 60px '';
+    margin-bottom: 20px;
+    font-family: font;
+    letter-spacing: 5px;
+    border-bottom: 2px solid rgb(134, 134, 118);
+    color: #ffffff;
+}
+.codeBox{
+    width: 100%;
+    height: 100%;
+    /* background-color: #9b59b6; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.code,
+.show{
+    width: 45%;
+    height: 90%;
+    background-color:#ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+.code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.show iframe{
+    width: 100%;
+    height: 100%;
+}
+#code{
+    font-size: 17px;
+}
+.tail {
+    position: absolute;
+    left: 0%;
+    bottom: 1%;
+    width: var(--pub-width);
+    /* height: calc((var(--total-height) - var(--main-height)) /2); */
+    height: 30px;
+    background-color:var(--main-color);
+}
+.tail p{
+    line-height: 30px;
+    text-align: center;
+    bottom: 0;
+    left: 45%;
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

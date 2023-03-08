@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css实现文字纵向排版</title>
+</head>
+
+<body>
+    <div class="bigBac">
+        <div class="poem">
+            <h1>短歌行</h1>
+            <div class="author">
+                <span>李白</span>
+                <span class="year">701</span>
+                <span class="to">~</span>
+                <span class="year">762</span>
+            </div>
+            <p>白日何短短</p>
+            <p>百年苦易满</p>
+            <p>苍穹浩茫茫</p>
+            <p>万劫太极长</p>
+            <p>麻姑垂两鬓</p>
+            <p>一半已成霜</p>
+            <p>天公见玉女</p>
+            <p>大笑亿千场</p>
+            <p>吾欲揽六龙</p>
+            <p>回车挂扶桑</p>
+            <p>北斗酌美酒</p>
+            <p>劝龙各一觞</p>
+            <p>富贵非所愿</p>
+            <p>与人驻颜光</p>
+        </div>
+    </div>
+
+</body>
+<style>
+    body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b2bec3;
+    overflow: hidden;
+}
+
+.bigBac {
+    width: 1000px;
+    height: 500px;
+    background-color: #dfe6e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    opacity: 0.8;
+    box-shadow: 0 5px 15px rgba(20, 20, 20, 0.8);
+    /* filter: drop-shadow(10px 10px  #b2bec3); */
+}
+
+.poem {
+    color: #333;
+    font-size: 1.4em;
+    writing-mode: vertical-rl;
+    float: right;
+    user-select: none;
+}
+
+.author {
+    color: #aaa;
+    font-size: 0.8em;
+    text-align: end;
+}
+
+.author .year {
+    text-orientation: upright;
+    text-combine-upright: all;
+}
+p{
+    transition: 0.4s;
+}
+p:hover{
+    font-size: 25px;
+    transition: 0.4s ease-in-out;
+}
+</style>
+</html>
