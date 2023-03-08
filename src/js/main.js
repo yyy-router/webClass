@@ -23,4 +23,3 @@ const res = hljs.highlight(htmlStr.str,{
 })
 code.className = `hljs language-${htmlStr.lang}`
 code.innerHTML = res.value;
-console.log('res',res)

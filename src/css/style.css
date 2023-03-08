@@ -140,18 +140,18 @@ body{
     background-color: var(--main-color);
 }
 .title{
-    position: relative;
+    position: absolute;
+    width:100%;
     top: 20px;
-    width: 45.5%;
-    left: 25%;
     font: 100 60px '';
     margin-bottom: 20px;
-    font-family: font;
     letter-spacing: 5px;
-    border-bottom: 2px solid rgb(134, 134, 118);
     color: #ffffff;
+    text-align: center;
 }
 .codeBox{
+    position: absolute;
+    top: 90px;
     width: 100%;
     height: 100%;
     /* background-color: #9b59b6; */
@@ -171,14 +171,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: auto;
+
 }
 .show iframe{
     width: 100%;
     height: 100%;
 }
 #code{
+    width: 90%;
+    height: 95%;
     font-size: 17px;
+    overflow: auto;
 }
 .tail {
     position: absolute;
