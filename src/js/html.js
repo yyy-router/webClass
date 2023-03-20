@@ -1,32 +1,34 @@
 const htmlStr = {
-   str :  `  <h4>手机商城</h4>
-<ul>
-    <li>手机名称</li>
-    <ol type="I">
-        <li>华为</li>
-        <ol type="1">
-            <li>Mate50Pro</li>
-            <li>Mate40Pro</li>
-            <li>nova10</li>
-        </ol>
-        <li>苹果</li>
-        <ol type="1">
-            <li>iPhone14 Pro Max</li>
-            <li>iPhone14</li>
-            <li>iPhone13</li>
-        </ol>
-        <li>小米</li>
-        <ol type="1">
-            <li>小米12Pro</li>
-            <li>小米13</li>
-            <li>小米12S</li>
-        </ol>
-        <li>三星</li>
-        <ol type="1">
-            <li>三星Galaxy S23</li>
-            <li>三星Galaxy S23 Ultra</li>
-            <li>三星Galaxy S22</li>
-        </ol>
-    </ol>`,
-    lang:'html'
+    str: `
+   <div class="container">
+   <div class="main">
+       <div class="head"></div>
+       <div class="bodyBox">
+           <div class="menu">
+               <ul>
+                   <li>第一次作业</li>
+                   <li>第二次作业</li>
+                   <li>第三次作业</li>
+                   <li>第四次作业</li>
+               </ul>
+           </div>
+           <div class="bodyMain">
+               <div class="left"></div>
+               <div class="box">
+                   <div class="boxMenu">
+                       <ul>
+                           <li>四季如春</li>
+                           <li>四季如春</li>
+                           <li>四季如春</li>
+                           <li>四季如春</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="right"></div>
+           </div>
+       </div>
+   </div>
+</div>
+   `,
+    lang: 'html'
 }
