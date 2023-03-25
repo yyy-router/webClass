@@ -98,7 +98,7 @@ body{
 }
 .menu{
     position: absolute;
-    right:calc((5% + calc(var(--nav-wid) / 2.6)));
+    right:calc((7.5% + calc(var(--nav-wid) / 2.6)));
     top: 55px;
     text-align: center;
     font-size: 15px;
@@ -109,6 +109,11 @@ body{
     background-color:#ffffff;
     display: none;
     padding: 15px;
+}
+.exmMenu{
+    position: absolute;
+    right:calc(1% + (calc(var(--nav-wid) / 2.6)));
+    top: 55px;
 }
 .menu li{
     list-style: none;
